@@ -47,10 +47,11 @@ namespace CalculatorTest
             Assert.That(uut.Power(x, exp), Is.EqualTo(output));
         }
 
-        [TestCase(-1, -2, 1)]
-        public void FestMedTest(double x, double exp, double output)
+        [TestCase(1, 2, 3)]
+        [TestCase(4, 2, 6)]
+        public void FestMedTest(double a, double b, double output)
         {
-            Assert.That(uut.Power(x, exp), Is.EqualTo(output));
+            Assert.That(uut.Add(a, b), Is.EqualTo(output));
         }
 
     }
