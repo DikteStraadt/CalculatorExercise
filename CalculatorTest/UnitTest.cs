@@ -46,5 +46,12 @@ namespace CalculatorTest
         {
             Assert.That(uut.Power(x, exp), Is.EqualTo(output));
         }
+
+        [TestCase(-1, -2, 1)]
+        public void FestMedTest(double x, double exp, double output)
+        {
+            Assert.That(uut.Power(x, exp), Is.EqualTo(output));
+        }
+
     }
 }
